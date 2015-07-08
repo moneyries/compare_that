@@ -6,10 +6,18 @@ $(function() {
 	function compare () {
 		
 		var a = $('#a').val();
-		console.log(a);
+		a = parseInt(a);
 
 		var b = $('#b').val();
-		console.log(b);
+		b = parseInt(b);
+
+		if (a < b) {
+			$('#comparison').html('<');
+		} else if (a > b) {
+			$('#comparison').html('>');
+		} else if(a == b) {
+			$('#comparison').html('=');
+		}
 	}
 
 
