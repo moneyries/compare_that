@@ -28,3 +28,6 @@ button:active {
   display: inline-block;
   width: 40px;
 }
+h1.party {
+  text-decoration: blink;
+}
